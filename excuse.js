@@ -16,7 +16,7 @@ function getRandomIndex(array) {
 }
 
 function generateExcuse() {
-  let first = getRandomIndex(who)
+  let first = getRandomIndex(who) // making this a variable to make sure getImage, below, works
   let sentence = first + ' ' + getRandomIndex(action) + ' ' + getRandomIndex(what) + ' ' + getRandomIndex(when)
   document.getElementById('image').src = getImage(first)
   return sentence;
